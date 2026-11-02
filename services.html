@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Repair Services | Aslam Telecom Borivali East</title>
+  <meta name="description" content="Explore professional device repair services at Aslam Telecom Borivali: iPhone, iPad, MacBook, Apple Watch, and flagship Android logic board diagnostics, precision screen replacements, and certified battery swaps with warranty assurance.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="top-notice-bar">
+    <div class="max-w-7xl mx-auto flex justify-between items-center text-xs">
+      <div class="flex items-center gap-2 truncate">
+        <span class="truncate"><i class="fa-solid fa-location-dot text-sky-400 mr-1"></i> Shop 15, Municipal Market, Borivali East</span>
+      </div>
+      <div>
+        <a href="tel:+919870552602" class="hover:text-sky-300 font-bold transition flex items-center gap-1 text-emerald-400">
+          <i class="fa-solid fa-phone-volume text-xs"></i> +91 98705 52602
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header-sticky">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="index.html" class="flex items-center gap-2 group">
+          <img src="assets/images/logo.svg" alt="Aslam Telecom" class="h-9 sm:h-12 w-auto transition-transform group-hover:scale-105">
+        </a>
+        <nav class="hidden lg:flex items-center gap-8 font-semibold text-slate-700 text-sm">
+          <a href="index.html" class="hover:text-sky-600 transition">Home</a>
+          <a href="services.html" class="text-sky-600 font-bold hover:text-sky-600 transition">Services</a>
+          <a href="index.html#before-after" class="hover:text-sky-600 transition flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            Before & After
+          </a>
+          <a href="index.html#compare" class="hover:text-sky-600 transition">Why Us</a>
+          <a href="index.html#reviews" class="hover:text-sky-600 transition">Reviews</a>
+          <a href="about.html" class="hover:text-sky-600 transition">About Us</a>
+          <a href="contact.html" class="hover:text-sky-600 transition">Contact</a>
+        </nav>
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/919870552602?text=Hi%20Aslam%20Telecom,%20I%20need%20a%20repair%20quote" target="_blank" class="btn-whatsapp py-2.5 px-5 text-sm">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>WhatsApp</span>
+          </a>
+          <button class="open-booking-modal btn-primary py-2.5 px-5 text-sm">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Book Repair</span>
+          </button>
+        </div>
+        <!-- Mobile Header Actions (Direct Quick Call, WhatsApp & Hamburger) -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <a href="tel:+919870552602" class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-sm font-bold active:bg-sky-100 border border-sky-100" title="Call Store">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="https://wa.me/919870552602?text=Hi%20Aslam%20Telecom,%20I%20need%20repair%20assistance" target="_blank" class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-base font-bold active:bg-emerald-100 border border-emerald-100" title="WhatsApp Us">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+          </a>
+          <button id="mobileMenuBtn" aria-label="Open Navigation Menu" class="w-11 h-11 flex items-center justify-center text-slate-700 hover:text-sky-600 text-xl focus:outline-none rounded-xl bg-slate-100/90 active:bg-slate-200 border border-slate-200/70">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu (OUTSIDE of <header> for 100% viewport coverage) -->
+  <div id="mobileMenu" class="mobile-drawer-overlay lg:hidden">
+    <div class="mobile-drawer-content">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+          <img src="assets/images/logo.svg" alt="Aslam Telecom" class="h-9">
+          <button id="closeMobileMenu" aria-label="Close Menu" class="w-10 h-10 flex items-center justify-center text-slate-400 hover:text-slate-700 text-2xl rounded-full bg-slate-100">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="flex flex-col gap-2 mt-5 font-bold text-slate-800 text-base">
+          <a href="index.html" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center"><i class="fa-solid fa-house mr-3 text-sky-500 w-5"></i> Home</a>
+          <a href="services.html" class="text-sky-600 py-3 px-3 rounded-xl bg-sky-50 flex items-center"><i class="fa-solid fa-screwdriver-wrench mr-3 text-sky-500 w-5"></i> All Services</a>
+          <a href="index.html#before-after" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center text-emerald-600"><i class="fa-solid fa-images mr-3 w-5"></i> Before & After Photos</a>
+          <a href="index.html#compare" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center"><i class="fa-solid fa-scale-balanced mr-3 text-sky-500 w-5"></i> Why Choose Us</a>
+          <a href="index.html#reviews" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center"><i class="fa-solid fa-star mr-3 text-amber-500 w-5"></i> Google Reviews</a>
+          <a href="about.html" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center"><i class="fa-solid fa-shield-halved mr-3 text-sky-500 w-5"></i> About Us</a>
+          <a href="contact.html" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center"><i class="fa-solid fa-location-dot mr-3 text-rose-500 w-5"></i> Store Location</a>
+        </nav>
+      </div>
+      <div class="space-y-2.5 pt-5 border-t border-slate-100">
+        <a href="tel:+919870552602" class="btn-outline w-full justify-center text-sm py-3 font-bold">
+          <i class="fa-solid fa-phone text-sky-600"></i> Call +91 98705 52602
+        </a>
+        <a href="https://wa.me/919870552602?text=Hi%20Aslam%20Telecom,%20I%20need%20repair%20assistance" target="_blank" class="btn-whatsapp w-full justify-center text-sm py-3 font-bold">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Instant WhatsApp Quote
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Title Banner -->
+  <section class="bg-slate-900 text-white py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <span class="text-xs font-black uppercase tracking-wider text-sky-400 bg-sky-950 px-4 py-1.5 rounded-full border border-sky-800">
+        Professional Workshop Solutions
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-black tracking-tight mt-3 sm:mt-4">
+        Our Hardware & Logic Board Diagnostic Services
+      </h1>
+      <p class="text-slate-400 text-xs sm:text-base max-w-2xl mx-auto mt-2 sm:mt-3">
+        Comprehensive repair catalog for Apple products, flagship Android foldables, and laptops in Borivali East, Mumbai.
+      </p>
+    </div>
+  </section>
+
+  <!-- Deep Dive Services List -->
+  <section class="py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
+      
+      <!-- Apple Ecosystem Category -->
+      <div>
+        <div class="border-b-2 border-sky-600 pb-3 mb-8 sm:mb-10 flex items-center justify-between">
+          <div>
+            <h2 class="text-xl sm:text-3xl font-black text-slate-900 flex items-center gap-2 sm:gap-3">
+              <i class="fa-brands fa-apple text-2xl sm:text-3xl text-slate-900"></i>
+              <span>Apple Device Specialization</span>
+            </h2>
+            <p class="text-slate-500 text-xs sm:text-sm mt-1">Specialized micro-soldering, Face ID repair, TrueTone calibration, and original displays.</p>
+          </div>
+          <span class="hidden sm:inline-block bg-sky-100 text-sky-800 text-xs font-black px-3.5 py-1.5 rounded-full">
+            Apple Certified Diagnostic Tools
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- iPhone Repair -->
+          <div class="card-service">
+            <div class="h-40 sm:h-44 -mx-6 -mt-6 sm:-mx-7 sm:-mt-7 mb-5 overflow-hidden rounded-t-2xl relative">
+              <img src="assets/images/screen-repair.jpg" alt="iPhone Repair" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
+              <span class="absolute bottom-3 left-4 text-white font-extrabold text-xs sm:text-sm">iPhone 16 / 15 / 14 / 13 / 12 / 11</span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2">iPhone Hardware Restoration</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mb-4 leading-relaxed">
+              Complete hardware solutions for all iPhone generations. Original OLED/Super Retina display swaps, zero-cycle OEM batteries, TrueDepth Face ID revival, and back glass CNC laser removal.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-2 mb-5 font-semibold text-slate-600">
+              <div class="flex justify-between items-center">
+                <span>Display Replacement:</span> 
+                <span class="text-sky-700 font-bold bg-sky-100/70 px-2 py-0.5 rounded text-[11px]">OEM / Retina Grade</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Battery (100% Health):</span> 
+                <span class="text-emerald-700 font-bold bg-emerald-100/70 px-2 py-0.5 rounded text-[11px]">Zero-Cycle OEM Grade</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Face ID / Ear Speaker:</span> 
+                <span class="text-purple-700 font-bold bg-purple-100/70 px-2 py-0.5 rounded text-[11px]">TrueDepth Diagnostic</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Laser Back Glass:</span> 
+                <span class="text-slate-700 font-bold bg-slate-200/70 px-2 py-0.5 rounded text-[11px]">Factory Clean Finish</span>
+              </div>
+            </div>
+            <button class="open-booking-modal btn-primary w-full text-xs py-3 justify-center">
+              Request Free Quote
+            </button>
+          </div>
+
+          <!-- MacBook Repair -->
+          <div class="card-service">
+            <div class="h-40 sm:h-44 -mx-6 -mt-6 sm:-mx-7 sm:-mt-7 mb-5 overflow-hidden rounded-t-2xl relative">
+              <img src="assets/images/macbook-repair.jpg" alt="MacBook Repair" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
+              <span class="absolute bottom-3 left-4 text-white font-extrabold text-xs sm:text-sm">MacBook Pro & Air (M1, M2, M3, Intel)</span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2">MacBook Logic Board Solutions</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mb-4 leading-relaxed">
+              Advanced precision micro-soldering and logic board engineering for MacBooks. Liquid spill decontamination, shorted capacitors, no-boot issues, broken Retina screens, and keyboard restoration.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-2 mb-5 font-semibold text-slate-600">
+              <div class="flex justify-between items-center">
+                <span>Retina Display Assembly:</span> 
+                <span class="text-sky-700 font-bold bg-sky-100/70 px-2 py-0.5 rounded text-[11px]">Factory Calibrated</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Logic Board Micro-Soldering:</span> 
+                <span class="text-emerald-700 font-bold bg-emerald-100/70 px-2 py-0.5 rounded text-[11px]">Precision Component Fix</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>OEM Battery Replacement:</span> 
+                <span class="text-purple-700 font-bold bg-purple-100/70 px-2 py-0.5 rounded text-[11px]">High-Capacity OEM</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Keyboard & Trackpad Fix:</span> 
+                <span class="text-slate-700 font-bold bg-slate-200/70 px-2 py-0.5 rounded text-[11px]">Precision Alignment</span>
+              </div>
+            </div>
+            <button class="open-booking-modal btn-primary w-full text-xs py-3 justify-center">
+              Request Free Quote
+            </button>
+          </div>
+
+          <!-- iPad & Apple Watch -->
+          <div class="card-service">
+            <div class="h-40 sm:h-44 -mx-6 -mt-6 sm:-mx-7 sm:-mt-7 mb-5 overflow-hidden rounded-t-2xl relative">
+              <img src="assets/images/motherboard-repair.jpg" alt="iPad and Watch Repair" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent"></div>
+              <span class="absolute bottom-3 left-4 text-white font-extrabold text-xs sm:text-sm">iPad Pro, Air & Apple Watch</span>
+            </div>
+            <h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2">iPad & Apple Watch Solutions</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mb-4 leading-relaxed">
+              Front touch digitizer and OLED replacements for iPad Pro, Mini, and Air. For Apple Watch, we specialize in curved glass refurbishment, battery replacement, and sensor glass repairs.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-2 mb-5 font-semibold text-slate-600">
+              <div class="flex justify-between items-center">
+                <span>iPad Screen & Glass:</span> 
+                <span class="text-sky-700 font-bold bg-sky-100/70 px-2 py-0.5 rounded text-[11px]">Retina Digitizer</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>iPad Battery / Port:</span> 
+                <span class="text-emerald-700 font-bold bg-emerald-100/70 px-2 py-0.5 rounded text-[11px]">OEM Specification</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Apple Watch Screen Glass:</span> 
+                <span class="text-purple-700 font-bold bg-purple-100/70 px-2 py-0.5 rounded text-[11px]">Curved Glass Craft</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Watch Battery Replacement:</span> 
+                <span class="text-slate-700 font-bold bg-slate-200/70 px-2 py-0.5 rounded text-[11px]">Tested Seal Integrity</span>
+              </div>
+            </div>
+            <button class="open-booking-modal btn-primary w-full text-xs py-3 justify-center">
+              Request Free Quote
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Android Flagships & Foldables Category -->
+      <div>
+        <div class="border-b-2 border-emerald-600 pb-3 mb-8 sm:mb-10 flex items-center justify-between">
+          <div>
+            <h2 class="text-xl sm:text-3xl font-black text-slate-900 flex items-center gap-2 sm:gap-3">
+              <i class="fa-solid fa-mobile-screen-button text-2xl sm:text-3xl text-emerald-600"></i>
+              <span>Android Flagships & Foldables</span>
+            </h2>
+            <p class="text-slate-500 text-xs sm:text-sm mt-1">Specialized care for Samsung Galaxy S & Fold/Flip, OnePlus, Google Pixel, and Xiaomi.</p>
+          </div>
+          <span class="hidden sm:inline-block bg-emerald-100 text-emerald-800 text-xs font-black px-3.5 py-1.5 rounded-full">
+            AMOLED & Curved Screen Experts
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- Samsung Galaxy & Foldables -->
+          <div class="card-service">
+            <h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2">Samsung Galaxy & Z Fold/Flip</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mb-4 leading-relaxed">
+              Authorized-grade Dynamic AMOLED 2X screen replacement, hinge mechanism cleaning and repair, flexible ultra-thin glass replacement, and battery swaps for S24 Ultra, S23, Z Fold 6/5, Z Flip.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-2 mb-5 font-semibold text-slate-600">
+              <div class="flex justify-between items-center">
+                <span>Galaxy S24 / S23 Screen:</span> 
+                <span class="text-sky-700 font-bold bg-sky-100/70 px-2 py-0.5 rounded text-[11px]">Dynamic AMOLED 2X</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Fold / Flip Screen & Hinge:</span> 
+                <span class="text-emerald-700 font-bold bg-emerald-100/70 px-2 py-0.5 rounded text-[11px]">Ultra-Thin Glass & Hinge</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Original Samsung Battery:</span> 
+                <span class="text-purple-700 font-bold bg-purple-100/70 px-2 py-0.5 rounded text-[11px]">Tested Capacity</span>
+              </div>
+            </div>
+            <button class="open-booking-modal btn-primary w-full text-xs py-3 justify-center">
+              Request Free Quote
+            </button>
+          </div>
+
+          <!-- OnePlus & Google Pixel -->
+          <div class="card-service">
+            <h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2">OnePlus & Google Pixel Solutions</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mb-4 leading-relaxed">
+              Fix OnePlus green line display issues, dead motherboard CPU reballing, Google Pixel Tensor logic board troubleshooting, periscope camera stabilization, and original fast-charge ports.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-2 mb-5 font-semibold text-slate-600">
+              <div class="flex justify-between items-center">
+                <span>OnePlus Display Swap:</span> 
+                <span class="text-sky-700 font-bold bg-sky-100/70 px-2 py-0.5 rounded text-[11px]">Green Line Solution</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Pixel Screen & Tensor IC:</span> 
+                <span class="text-emerald-700 font-bold bg-emerald-100/70 px-2 py-0.5 rounded text-[11px]">Board Diagnostics</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Warp/SuperVOOC Port:</span> 
+                <span class="text-slate-700 font-bold bg-slate-200/70 px-2 py-0.5 rounded text-[11px]">Fast Charging Restored</span>
+              </div>
+            </div>
+            <button class="open-booking-modal btn-primary w-full text-xs py-3 justify-center">
+              Request Free Quote
+            </button>
+          </div>
+
+          <!-- Data Recovery & Dead Phone Revival -->
+          <div class="card-service">
+            <h3 class="text-lg sm:text-xl font-black text-slate-900 mb-2">Dead Device Data Recovery</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mb-4 leading-relaxed">
+              Severe liquid immersion, crushed hardware, or completely unresponsive smartphones? Our forensic component extraction and micro-jumpering techniques retrieve photos, chats, and work files safely.
+            </p>
+            <div class="bg-slate-50 p-3 rounded-xl text-xs space-y-2 mb-5 font-semibold text-slate-600">
+              <div class="flex justify-between items-center">
+                <span>Dead Device Diagnostic:</span> 
+                <span class="text-emerald-700 font-bold bg-emerald-100/70 px-2 py-0.5 rounded text-[11px]">Free Diagnostic Inspection</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Emergency Data Extraction:</span> 
+                <span class="text-sky-700 font-bold bg-sky-100/70 px-2 py-0.5 rounded text-[11px]">Advanced Memory Read</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Privacy Non-Disclosure:</span> 
+                <span class="text-purple-700 font-bold bg-purple-100/70 px-2 py-0.5 rounded text-[11px]">100% Confidential</span>
+              </div>
+            </div>
+            <button class="open-booking-modal btn-primary w-full text-xs py-3 justify-center">
+              Request Free Inspection
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Box -->
+  <section class="py-12 bg-sky-50 border-t border-sky-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-xl sm:text-2xl font-black text-slate-900">Need a Custom Diagnostic or Exact Quote?</h3>
+      <p class="text-slate-600 text-xs sm:text-sm mt-1">Chat directly with Master Technician Aslam on WhatsApp with your device photo.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-3 mt-5">
+        <a href="https://wa.me/919870552602" target="_blank" class="btn-whatsapp text-sm py-3 px-6">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Send Photo on WhatsApp
+        </a>
+        <a href="contact.html" class="btn-outline text-sm py-3 px-6">
+          <i class="fa-solid fa-location-dot"></i> Visit Borivali Store
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-12 text-xs border-t border-slate-900 text-center">
+    <img src="assets/images/logo-white.svg" alt="Aslam Telecom" class="h-8 mx-auto mb-3">
+    <p>Shop 15, Municipal Market, Main Carter Road, Borivali East, Mumbai 400066. Call: +91 98705 52602</p>
+    <p class="mt-1">&copy; 2026 Aslam Telecom. All rights reserved.</p>
+  </footer>
+
+  <!-- Mobile Sticky Bottom Bar -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:+919870552602" class="btn-outline flex-1 text-center justify-center py-2.5 text-xs font-bold">
+      <i class="fa-solid fa-phone text-sky-600"></i> Call
+    </a>
+    <a href="https://wa.me/919870552602?text=Hi%20Aslam%20Telecom,%20I%20need%20repair%20details" target="_blank" class="btn-whatsapp flex-1 text-center justify-center py-2.5 text-xs font-bold">
+      <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+    </a>
+    <button class="open-booking-modal btn-primary flex-1 text-center justify-center py-2.5 text-xs font-bold">
+      <i class="fa-solid fa-calendar-check"></i> Book
+    </button>
+  </div>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+        <div>
+          <h3 class="font-black text-lg sm:text-xl text-slate-900">Book A Priority Repair</h3>
+          <p class="text-slate-500 text-xs">Zero waiting queue at our Borivali East workshop</p>
+        </div>
+        <button id="closeBookingModal" class="w-9 h-9 flex items-center justify-center text-slate-400 hover:text-slate-700 text-xl rounded-full bg-slate-100">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form id="bookingModalForm" class="space-y-3 sm:space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Your Full Name</label>
+          <input type="text" name="name" required placeholder="e.g. Sameer Kulkarni" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Mobile / WhatsApp Number</label>
+          <input type="tel" name="phone" required placeholder="e.g. 98705 12345" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
+        </div>
+        <div class="grid grid-cols-2 gap-2.5">
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Device Model</label>
+            <input type="text" name="device" required placeholder="e.g. iPhone 15" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Problem</label>
+            <input type="text" name="issue" required placeholder="e.g. Broken Screen" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary w-full py-3.5 text-sm font-bold justify-center mt-1">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Confirm Booking On WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

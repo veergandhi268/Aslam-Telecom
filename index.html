@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Aslam Telecom | Expert Apple & Smartphone Repair Center in Borivali East, Mumbai</title>
+  <meta name="description" content="Aslam Telecom is Borivali East's premier mobile & laptop repair center. Specializing in iPhone, MacBook, iPad, Apple Watch, and Android advanced logic board motherboard diagnostics, precision screen replacement, and certified battery swaps with warranty assurance.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Top Announcement Bar (Mobile-Optimized Single Row) -->
+  <div class="top-notice-bar">
+    <div class="max-w-7xl mx-auto flex justify-between items-center text-xs">
+      <div class="flex items-center gap-2 truncate">
+        <span class="truncate"><i class="fa-solid fa-location-dot text-sky-400 mr-1"></i> Shop 15, Municipal Market, Borivali East</span>
+        <span class="hidden sm:inline text-sky-300/40">|</span>
+        <span class="hidden md:inline"><i class="fa-regular fa-clock text-sky-400 mr-1"></i> 10 AM - 9 PM</span>
+      </div>
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="tel:+919870552602" class="hover:text-sky-300 font-bold transition flex items-center gap-1 text-emerald-400">
+          <i class="fa-solid fa-phone-volume text-xs"></i> 
+          <span class="hidden xs:inline">Call</span> +91 98705 52602
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Sticky Navigation -->
+  <header class="header-sticky">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 group">
+          <img src="assets/images/logo.svg" alt="Aslam Telecom Logo" class="h-9 sm:h-12 w-auto transition-transform group-hover:scale-105">
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-8 font-semibold text-slate-700 text-sm">
+          <a href="index.html" class="text-sky-600 font-bold hover:text-sky-600 transition">Home</a>
+          <a href="services.html" class="hover:text-sky-600 transition">Services</a>
+          <a href="#before-after" class="hover:text-sky-600 transition flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            Before & After
+          </a>
+          <a href="#compare" class="hover:text-sky-600 transition">Why Us</a>
+          <a href="#reviews" class="hover:text-sky-600 transition">Reviews</a>
+          <a href="about.html" class="hover:text-sky-600 transition">About Us</a>
+          <a href="contact.html" class="hover:text-sky-600 transition">Contact</a>
+        </nav>
+
+        <!-- Right CTA Actions (Desktop) -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/919870552602?text=Hi%20Aslam%20Telecom,%20I%20want%20to%20get%20my%20device%20repaired" target="_blank" class="btn-whatsapp py-2.5 px-5 text-sm">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>WhatsApp</span>
+          </a>
+          <button class="open-booking-modal btn-primary py-2.5 px-5 text-sm">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Book Repair</span>
+          </button>
+        </div>
+
+        <!-- Mobile Header Actions (Direct Quick Call, WhatsApp & Hamburger) -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <a href="tel:+919870552602" class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-sm font-bold active:bg-sky-100 border border-sky-100" title="Call Store">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="https://wa.me/919870552602?text=Hi%20Aslam%20Telecom,%20I%20need%20repair%20assistance" target="_blank" class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-base font-bold active:bg-emerald-100 border border-emerald-100" title="WhatsApp Us">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+          </a>
+          <button id="mobileMenuBtn" aria-label="Open Navigation Menu" class="w-11 h-11 flex items-center justify-center text-slate-700 hover:text-sky-600 text-xl focus:outline-none rounded-xl bg-slate-100/90 active:bg-slate-200 border border-slate-200/70">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu (OUTSIDE of <header> for 100% viewport coverage) -->
+  <div id="mobileMenu" class="mobile-drawer-overlay lg:hidden">
+    <div class="mobile-drawer-content">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+          <img src="assets/images/logo.svg" alt="Aslam Telecom" class="h-9">
+          <button id="closeMobileMenu" aria-label="Close Menu" class="w-10 h-10 flex items-center justify-center text-slate-400 hover:text-slate-700 text-2xl rounded-full bg-slate-100">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <nav class="flex flex-col gap-2 mt-5 font-bold text-slate-800 text-base">
+          <a href="index.html" class="text-sky-600 py-3 px-3 rounded-xl bg-sky-50 flex items-center"><i class="fa-solid fa-house mr-3 text-sky-500 w-5"></i> Home</a>
+          <a href="services.html" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center"><i class="fa-solid fa-screwdriver-wrench mr-3 text-sky-500 w-5"></i> Repair Services</a>
+          <a href="#before-after" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center text-emerald-600"><i class="fa-solid fa-images mr-3 w-5"></i> Before & After Photos</a>
+          <a href="#compare" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center"><i class="fa-solid fa-scale-balanced mr-3 text-sky-500 w-5"></i> Why Choose Us</a>
+          <a href="#reviews" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center"><i class="fa-solid fa-star mr-3 text-amber-500 w-5"></i> Google Reviews</a>
+          <a href="about.html" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center"><i class="fa-solid fa-shield-halved mr-3 text-sky-500 w-5"></i> About Us</a>
+          <a href="contact.html" class="py-3 px-3 rounded-xl hover:bg-slate-50 flex items-center"><i class="fa-solid fa-location-dot mr-3 text-rose-500 w-5"></i> Store Location & Map</a>
+        </nav>
+      </div>
+      <div class="space-y-2.5 pt-5 border-t border-slate-100">
+        <a href="tel:+919870552602" class="btn-outline w-full justify-center text-sm py-3 font-bold">
+          <i class="fa-solid fa-phone text-sky-600"></i> Call +91 98705 52602
+        </a>
+        <a href="https://wa.me/919870552602?text=Hi%20Aslam%20Telecom,%20I%20need%20repair%20assistance" target="_blank" class="btn-whatsapp w-full justify-center text-sm py-3 font-bold">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section (Mobile Optimized) -->
+  <section class="relative overflow-hidden hero-gradient pt-8 pb-14 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6">
+          <div class="inline-flex items-center gap-2">
+            <span class="badge-pulse">
+              <span class="badge-dot"></span>
+              Borivali East's #1 Rated Apple & Smartphone Care Center
+            </span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.15]">
+            Expert Device Repairs. <br>
+            <span class="text-gradient">Prompt & Precision Service.</span>
+          </h1>
+
+          <p class="text-sm sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
+            From shattered <strong class="text-slate-800">iPhone screens</strong> and dying batteries to complex <strong class="text-slate-800">MacBook logic board</strong> micro-soldering and liquid damage recovery. We restore devices declared dead by others.
+          </p>
+
+          <!-- Key Trust Badges Grid (Clean on Mobile) -->
+          <div class="grid grid-cols-3 gap-2 sm:gap-4 pt-1 max-w-xl">
+            <div class="bg-white border border-slate-200/80 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 text-center shadow-sm">
+              <div class="text-sky-600 font-extrabold text-lg sm:text-2xl">Express</div>
+              <div class="text-slate-500 text-[10px] sm:text-xs font-semibold mt-0.5">Turnaround</div>
+            </div>
+            <div class="bg-white border border-slate-200/80 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 text-center shadow-sm">
+              <div class="text-emerald-600 font-extrabold text-lg sm:text-2xl">Service</div>
+              <div class="text-slate-500 text-[10px] sm:text-xs font-semibold mt-0.5">Warranty Included</div>
+            </div>
+            <div class="bg-white border border-slate-200/80 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 text-center shadow-sm">
+              <div class="text-amber-500 font-extrabold text-lg sm:text-2xl">4.9 ★</div>
+              <div class="text-slate-500 text-[10px] sm:text-xs font-semibold mt-0.5">Google Rating</div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons (Full-Width on Mobile for Finger Tap) -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+            <button class="open-booking-modal btn-primary text-sm sm:text-base py-3.5 px-8 w-full sm:w-auto">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span>Book A Repair</span>
+            </button>
+            <a href="https://wa.me/919870552602?text=Hi%20Aslam%20Telecom,%20I%20need%20urgent%20mobile%20repair%20service" target="_blank" class="btn-whatsapp text-sm sm:text-base py-3.5 px-7 w-full sm:w-auto">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>Chat on WhatsApp</span>
+            </a>
+            <a href="tel:+919870552602" class="btn-outline text-sm sm:text-base py-3.5 px-6 w-full sm:w-auto">
+              <i class="fa-solid fa-phone"></i>
+              <span>Call Store</span>
+            </a>
+          </div>
+
+          <!-- Micro Location Assurance -->
+          <div class="flex items-center gap-2 text-xs text-slate-500 pt-1">
+            <i class="fa-solid fa-shield-halved text-emerald-500 text-sm shrink-0"></i>
+            <span>100% Data Privacy • Walking Distance From Borivali Station (East)</span>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Showcase -->
+        <div class="lg:col-span-5 relative mt-4 lg:mt-0">
+          <div class="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl border-2 sm:border-4 border-white aspect-[4/3] sm:aspect-square">
+            <img src="assets/images/hero-repair.jpg" alt="Aslam Telecom device care center" class="w-full h-full object-cover">
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-transparent to-transparent"></div>
+            
+            <div class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-emerald-300">Workshop Open Today</span>
+              </div>
+              <p class="font-black text-base sm:text-xl">Advanced Logic Board Diagnostics Workstation</p>
+              <p class="text-slate-300 text-[11px] sm:text-xs">Precision diagnostics & micro-soldering workstation.</p>
+            </div>
+          </div>
+
+          <!-- Floating Badges Optimized for Screen Width -->
+          <div class="absolute -top-3 left-2 sm:-left-4 bg-white/95 backdrop-blur-md border border-slate-200 rounded-xl p-2.5 sm:p-3.5 shadow-lg flex items-center gap-2.5">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center text-base sm:text-lg font-black">
+              <i class="fa-brands fa-apple"></i>
+            </div>
+            <div>
+              <p class="text-[10px] font-bold text-slate-400 uppercase">Specialist</p>
+              <p class="text-xs sm:text-sm font-extrabold text-slate-900">Apple Certified Tech</p>
+            </div>
+          </div>
+
+          <div class="absolute -bottom-3 right-2 sm:-right-4 bg-white/95 backdrop-blur-md border border-slate-200 rounded-xl p-2.5 sm:p-3.5 shadow-lg flex items-center gap-2.5">
+            <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center text-base sm:text-lg">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div>
+              <p class="text-[10px] font-bold text-slate-400 uppercase">Same Day Delivery</p>
+              <p class="text-xs sm:text-sm font-black text-slate-900">92% Fixed Same Day</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Supported Brands Strip (Mobile Horizontal Touch Scroll) -->
+  <section class="py-6 bg-white border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-center text-[11px] sm:text-xs font-extrabold uppercase tracking-widest text-slate-400 mb-4">
+        Specialized In Hardware & Logic Board Repair For All Platforms
+      </p>
+      <div class="flex items-center gap-6 sm:gap-12 md:gap-16 overflow-x-auto no-scrollbar py-2 px-1 text-slate-700 font-bold text-sm sm:text-base whitespace-nowrap justify-start sm:justify-center">
+        <div class="flex items-center gap-2"><i class="fa-brands fa-apple text-2xl text-slate-900"></i> Apple iPhone / Mac</div>
+        <div class="flex items-center gap-2"><i class="fa-solid fa-mobile-screen text-xl text-blue-600"></i> Samsung Galaxy</div>
+        <div class="flex items-center gap-2"><i class="fa-brands fa-google text-xl text-red-500"></i> Google Pixel</div>
+        <div class="flex items-center gap-2"><i class="fa-solid fa-plus text-xl text-red-600"></i> OnePlus</div>
+        <div class="flex items-center gap-2"><i class="fa-solid fa-laptop text-xl text-sky-600"></i> MacBook / Laptops</div>
+        <div class="flex items-center gap-2"><i class="fa-solid fa-clock text-xl text-purple-600"></i> Apple Watch</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Repair Section -->
+  <section class="py-16 sm:py-20 bg-slate-50" id="services">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <span class="text-xs font-black uppercase tracking-wider text-sky-600 bg-sky-100/60 px-4 py-1.5 rounded-full">
+          Comprehensive Hardware Care
+        </span>
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 mt-3 sm:mt-4 tracking-tight">
+          What We Repair
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-lg mt-2 sm:mt-3">
+          Our Borivali workshop is equipped with industrial-grade micro-soldering benches, laser separators, and genuine OEM testing stations.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Service 1: Screen Replacement -->
+        <div class="card-service flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-sky-50 flex items-center justify-center p-3 mb-5">
+              <img src="assets/images/icons/screen-icon.svg" alt="Screen Replacement" class="w-full h-full">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg sm:text-xl font-black text-slate-900">Screen Replacement</h3>
+              <span class="text-[11px] font-bold text-sky-600 bg-sky-50 px-2.5 py-1 rounded-full">Express Service</span>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Cracked glass, black ink spots, green vertical lines, or dead touch? We restore Super Retina OLED and AMOLED displays with 100% TrueTone transfer and oleophobic coating intact.
+            </p>
+            <ul class="text-xs font-semibold text-slate-500 space-y-2 mb-5">
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Original Vivid Colors & TrueTone Restored</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Only Glass Replacement Option (Save 50%!)</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Official Service Warranty Included</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-sky-700 bg-sky-100/70 px-2.5 py-1 rounded-md">OEM Grade Panels</span>
+            <button class="open-booking-modal text-sm font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1">
+              Book Now <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 2: Battery Replacement -->
+        <div class="card-service flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-emerald-50 flex items-center justify-center p-3 mb-5">
+              <img src="assets/images/icons/battery-icon.svg" alt="Battery Replacement" class="w-full h-full">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg sm:text-xl font-black text-slate-900">Battery Replacement</h3>
+              <span class="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">Prompt Turnaround</span>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Phone dying fast, overheating, swelling, or rebooting unexpectedly? We replace degraded cells with high-density OEM batteries calibrated to 100% health with no warning popups.
+            </p>
+            <ul class="text-xs font-semibold text-slate-500 space-y-2 mb-5">
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 100% Maximum Capacity Health</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Zero Throttling & Fast Charging Support</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Safe Disposal of Old Swollen Cells</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-emerald-700 bg-emerald-100/70 px-2.5 py-1 rounded-md">100% Battery Health</span>
+            <button class="open-booking-modal text-sm font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1">
+              Book Now <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 3: Logic Board & Motherboard Diagnostics -->
+        <div class="card-service flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-indigo-50 flex items-center justify-center p-3 mb-5">
+              <img src="assets/images/icons/motherboard-icon.svg" alt="Motherboard Logic Board Repair" class="w-full h-full">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg sm:text-xl font-black text-slate-900">Logic Board Diagnostics</h3>
+              <span class="text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">Specialty</span>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Declared "dead or unrepairable" by official service centers? Aslam Telecom specializes in micro-soldering, short-circuit diagnostics, Power IC, Audio IC, and CPU reballing.
+            </p>
+            <ul class="text-xs font-semibold text-slate-500 space-y-2 mb-5">
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> No-Power, Dead Boot & Restart Loop Fix</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Full Customer Data Saved in 90% Cases</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> High-Precision Thermal Camera Diagnostics</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-sky-700 bg-sky-100/70 px-2.5 py-1 rounded-md">Free Diagnostics</span>
+            <button class="open-booking-modal text-sm font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1">
+              Book Now <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 4: Liquid & Water Damage Repair -->
+        <div class="card-service flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-cyan-50 flex items-center justify-center p-3 mb-5">
+              <img src="assets/images/icons/water-icon.svg" alt="Water Damage Repair" class="w-full h-full">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg sm:text-xl font-black text-slate-900">Water Damage Treatment</h3>
+              <span class="text-[11px] font-bold text-cyan-600 bg-cyan-50 px-2.5 py-1 rounded-full">Same Day</span>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Dropped in water, pool, or rain? Never put it in rice! Bring it to our workshop for immediate ultrasonic chemical de-oxidation, corrosion removal, and IC revival.
+            </p>
+            <ul class="text-xs font-semibold text-slate-500 space-y-2 mb-5">
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Ultrasonic Chemical Board Cleaning</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Anti-Corrosion Treatment for Components</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Critical Data Recovery Priority</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-purple-700 bg-purple-100/70 px-2.5 py-1 rounded-md">Ultrasonic Clean</span>
+            <button class="open-booking-modal text-sm font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1">
+              Book Now <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 5: Camera & Speaker Repair -->
+        <div class="card-service flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-rose-50 flex items-center justify-center p-3 mb-5">
+              <img src="assets/images/icons/camera-icon.svg" alt="Camera & Speaker Repair" class="w-full h-full">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg sm:text-xl font-black text-slate-900">Camera & Audio Module</h3>
+              <span class="text-[11px] font-bold text-rose-600 bg-rose-50 px-2.5 py-1 rounded-full">Express Turnaround</span>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Shaky video, black camera viewfinder, cracked sapphire lens, or low speaker sound during calls? We replace individual lenses or sensors with razor-sharp clarity.
+            </p>
+            <ul class="text-xs font-semibold text-slate-500 space-y-2 mb-5">
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Optical Image Stabilization (OIS) Calibration</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Broken Outer Lens Replacement</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Earpiece, Mic & Loudspeaker Mesh Cleaning</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-rose-700 bg-rose-100/70 px-2.5 py-1 rounded-md">Laser CNC Removal</span>
+            <button class="open-booking-modal text-sm font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1">
+              Book Now <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 6: Charging Port & Back Glass Laser Fix -->
+        <div class="card-service flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-amber-50 flex items-center justify-center p-3 mb-5">
+              <img src="assets/images/icons/port-icon.svg" alt="Charging Port & Back Glass" class="w-full h-full">
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg sm:text-xl font-black text-slate-900">Charging Port & Laser Glass</h3>
+              <span class="text-[11px] font-bold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full">Fast Fix</span>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed mb-5">
+              Loose cable connector, slow charging, or shattered back glass? We utilize advanced zero-heat laser machines to remove rear glass seamlessly without disassembling the motherboard.
+            </p>
+            <ul class="text-xs font-semibold text-slate-500 space-y-2 mb-5">
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Precision CNC Laser Back Glass Removal</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Type-C & Lightning Flex Replacement</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Wireless Charging & NFC Coil Preserved</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-extrabold text-indigo-700 bg-indigo-100/70 px-2.5 py-1 rounded-md">Certified Workshop Tools</span>
+            <button class="open-booking-modal text-sm font-bold text-sky-600 hover:text-sky-700 flex items-center gap-1">
+              Book Now <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="services.html" class="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-bold text-sm sm:text-base">
+          View Complete Service Catalog (iPad, MacBook, Apple Watch, Samsung Fold)
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       BEFORE & AFTER COMPARISON SHOWCASE (MOBILE OPTIMIZED)
+       ======================================================== -->
+  <section class="py-16 sm:py-20 bg-white border-t border-slate-200/80" id="before-after">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+        <span class="text-xs font-black uppercase tracking-wider text-emerald-600 bg-emerald-50 px-4 py-1.5 rounded-full border border-emerald-200">
+          Real Workshop Case Studies
+        </span>
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 mt-3 sm:mt-4 tracking-tight">
+          Before & After Restorations
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-lg mt-2 sm:mt-3">
+          See the actual results delivered by our technicians. Swipe with your finger across the photo to inspect the repair quality.
+        </p>
+      </div>
+
+      <!-- Featured Interactive Slider Comparison: iPhone Display -->
+      <div class="bg-slate-900 text-white rounded-2xl sm:rounded-3xl p-5 sm:p-10 shadow-xl mb-12 sm:mb-16 border border-slate-800">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
+          
+          <!-- Slider Component (Left 7 Cols) -->
+          <div class="lg:col-span-7">
+            <div class="ba-container aspect-[4/3] w-full">
+              <!-- Badges -->
+              <span class="ba-badge ba-badge-before"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Before: Broken</span>
+              <span class="ba-badge ba-badge-after"><i class="fa-solid fa-circle-check mr-1"></i> After: Restored</span>
+
+              <!-- Range Input for dragging/touch -->
+              <input type="range" min="0" max="100" value="50" class="ba-range-input" aria-label="Before and After visual comparison slider">
+
+              <div class="ba-image-wrapper">
+                <!-- After Image (Background) -->
+                <img src="assets/images/after-screen.jpg" alt="iPhone after screen repair at Aslam Telecom" class="ba-image-after">
+
+                <!-- Before Image (Clipped Overlay) -->
+                <div class="ba-image-before-wrapper">
+                  <img src="assets/images/before-screen.jpg" alt="iPhone with shattered cracked screen before repair" class="ba-image-before" style="width: 200%; max-width: none;">
+                </div>
+
+                <!-- Draggable Handle Bar -->
+                <div class="ba-slider-handle">
+                  <i class="fa-solid fa-arrows-left-right text-xs"></i>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex items-center justify-center gap-1.5 text-xs text-slate-300 mt-3 font-semibold bg-slate-800/60 py-1.5 px-3 rounded-full w-fit mx-auto">
+              <i class="fa-solid fa-hand-pointer text-sky-400"></i>
+              <span>Swipe finger left or right on photo to compare</span>
+            </div>
+          </div>
+
+          <!-- Case Details (Right 5 Cols) -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="inline-flex items-center gap-2 bg-sky-500/10 text-sky-400 text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full border border-sky-500/20">
+              iPhone 15 Pro Max Case Study
+            </div>
+            
+            <h3 class="text-xl sm:text-2xl lg:text-3xl font-black text-white leading-snug">
+              Complete Display Shatter & Touch Failure
+            </h3>
+
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Customer dropped device on stone flooring resulting in severe spiderweb glass cracks, green artifact lines, and non-responsive digitizer. 
+            </p>
+
+            <div class="space-y-2.5 bg-slate-800/80 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-slate-700/60 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Restoration:</span>
+                <span class="font-bold text-white">OEM Super Retina XDR OLED</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">TrueTone:</span>
+                <span class="font-bold text-emerald-400">100% Preserved</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Turnaround:</span>
+                <span class="font-bold text-sky-400">Same-Day Walk-In Service</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Saved vs Brand Center:</span>
+                <span class="font-bold text-amber-400">Saved vs Official Replacement</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Warranty Given:</span>
+                <span class="font-bold text-emerald-400">Service Warranty Included</span>
+              </div>
+            </div>
+
+            <button class="open-booking-modal btn-primary w-full py-3.5 text-sm font-bold justify-center">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span>Book Similar Screen Repair</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Additional Side-by-Side Comparison Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        
+        <!-- Case Study 2: MacBook Liquid & Motherboard Fix -->
+        <div class="comparison-card p-5 sm:p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div>
+              <span class="text-[10px] sm:text-xs font-black uppercase text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full">
+                Motherboard Micro-Soldering
+              </span>
+              <h3 class="text-base sm:text-lg font-black text-slate-900 mt-1">MacBook Air M2 Liquid Spill</h3>
+            </div>
+            <span class="text-[10px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+              100% Data Saved
+            </span>
+          </div>
+
+          <!-- Side by Side Photos -->
+          <div class="grid grid-cols-2 gap-2 sm:gap-3 mb-3">
+            <div class="relative rounded-xl overflow-hidden aspect-[4/3]">
+              <img src="assets/images/before-board.jpg" alt="Corroded water damaged logic board before cleaning" class="w-full h-full object-cover">
+              <span class="absolute top-1.5 left-1.5 bg-red-600 text-white text-[9px] font-black uppercase px-1.5 py-0.5 rounded-full">
+                Before: Corroded
+              </span>
+            </div>
+            <div class="relative rounded-xl overflow-hidden aspect-[4/3]">
+              <img src="assets/images/after-board.jpg" alt="Clean micro-soldered logic board after repair" class="w-full h-full object-cover">
+              <span class="absolute top-1.5 left-1.5 bg-emerald-600 text-white text-[9px] font-black uppercase px-1.5 py-0.5 rounded-full">
+                After: Repaired
+              </span>
+            </div>
+          </div>
+
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
+            Liquid ingress shorted the 3.3V power rail and corroded surface capacitors. Our workshop performed ultrasonic solvent bath decontamination, replaced 2 failed capacitors, and revived the device without losing files.
+          </p>
+
+          <div class="flex items-center justify-between text-xs font-bold text-slate-500 pt-3 border-t border-slate-100">
+            <span>Turnaround: <strong class="text-slate-800">Same Day</strong></span>
+            <span>Saved: <strong class="text-emerald-600">Avoided Board Swap</strong></span>
+            <button class="open-booking-modal text-sky-600 hover:text-sky-700 font-bold">Inquire <i class="fa-solid fa-arrow-right text-[10px]"></i></button>
+          </div>
+        </div>
+
+        <!-- Case Study 3: MacBook Display & Keyboard Restoration -->
+        <div class="comparison-card p-5 sm:p-6">
+          <div class="flex items-center justify-between mb-3">
+            <div>
+              <span class="text-[10px] sm:text-xs font-black uppercase text-sky-600 bg-sky-50 px-2 py-0.5 rounded-full">
+                Retina Display Replacement
+              </span>
+              <h3 class="text-base sm:text-lg font-black text-slate-900 mt-1">MacBook Pro 14" Display Bleed</h3>
+            </div>
+            <span class="text-[10px] sm:text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+              Zero Bleed
+            </span>
+          </div>
+
+          <!-- Side by Side Photos -->
+          <div class="grid grid-cols-2 gap-2 sm:gap-3 mb-3">
+            <div class="relative rounded-xl overflow-hidden aspect-[4/3]">
+              <img src="assets/images/before-mac.jpg" alt="Broken laptop display before repair" class="w-full h-full object-cover">
+              <span class="absolute top-1.5 left-1.5 bg-red-600 text-white text-[9px] font-black uppercase px-1.5 py-0.5 rounded-full">
+                Before: Broken
+              </span>
+            </div>
+            <div class="relative rounded-xl overflow-hidden aspect-[4/3]">
+              <img src="assets/images/after-mac.jpg" alt="Crisp MacBook display after restoration" class="w-full h-full object-cover">
+              <span class="absolute top-1.5 left-1.5 bg-emerald-600 text-white text-[9px] font-black uppercase px-1.5 py-0.5 rounded-full">
+                After: Restored
+              </span>
+            </div>
+          </div>
+
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-3">
+            Cracked Liquid Retina XDR screen with vertical rainbow color lines and flickering backlight. Restored with genuine display panel assembly, retaining TrueTone sensor and FaceTime HD camera.
+          </p>
+
+          <div class="flex items-center justify-between text-xs font-bold text-slate-500 pt-3 border-t border-slate-100">
+            <span>Turnaround: <strong class="text-slate-800">4 Hours</strong></span>
+            <span>Warranty: <strong class="text-emerald-600">Service Warranty Backed</strong></span>
+            <button class="open-booking-modal text-sky-600 hover:text-sky-700 font-bold">Inquire <i class="fa-solid fa-arrow-right text-[10px]"></i></button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Transparent Comparison: Why Aslam Telecom Outperforms -->
+  <section class="py-16 sm:py-20 bg-slate-50" id="compare">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+        <span class="text-xs font-black uppercase tracking-wider text-sky-600 bg-sky-100/60 px-4 py-1.5 rounded-full">
+          Honest Comparison
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-900 mt-3 sm:mt-4 tracking-tight">
+          How We Compare
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-base mt-2">
+          Why over 15,000+ customers in Mumbai choose Aslam Telecom over official service centers and unauthorized corner shops.
+        </p>
+      </div>
+
+      <!-- Mobile Touch Swipe Hint -->
+      <div class="sm:hidden text-center text-xs text-sky-700 bg-sky-50 py-2 px-3 rounded-lg mb-3 font-semibold border border-sky-100">
+        <i class="fa-solid fa-arrows-left-right mr-1.5"></i> Swipe table sideways to compare parameters
+      </div>
+
+      <div class="table-scroll-container bg-white">
+        <table class="compare-table">
+          <thead class="bg-slate-900 text-white">
+            <tr>
+              <th class="w-1/4">Repair Parameter</th>
+              <th class="w-1/3 bg-sky-600 text-white text-base">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-shield-halved text-xl"></i>
+                  <span>Aslam Telecom (Borivali)</span>
+                </div>
+              </th>
+              <th class="w-1/4 text-slate-300 font-normal text-sm">Authorized Brand Centers</th>
+              <th class="w-1/4 text-slate-300 font-normal text-sm">Untrained Local Shops</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm">
+            <tr>
+              <td class="font-bold text-slate-800">Turnaround Speed</td>
+              <td class="compare-highlight font-extrabold text-sky-700">
+                <i class="fa-solid fa-bolt text-amber-500 mr-1"></i> Prompt Turnaround (Express Service)
+              </td>
+              <td class="text-slate-500">5 to 14 Days Wait Time</td>
+              <td class="text-slate-500">Unpredictable (2-5 Days)</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-800">Customer Data Safety</td>
+              <td class="compare-highlight font-extrabold text-emerald-700">
+                <i class="fa-solid fa-check text-emerald-500 mr-1"></i> 100% Preserved (No Wipe)
+              </td>
+              <td class="text-rose-600 font-semibold">Mandatory Factory Reset</td>
+              <td class="text-slate-500">High Risk of Exposure</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-800">Motherboard / Chip Repair</td>
+              <td class="compare-highlight font-extrabold text-sky-700">
+                <i class="fa-solid fa-check text-emerald-500 mr-1"></i> Micro-Soldering Component Fix
+              </td>
+              <td class="text-slate-500">Only costly full board replacement</td>
+              <td class="text-slate-500">Cannot do micro-soldering</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-800">Repair Pricing</td>
+              <td class="compare-highlight font-extrabold text-sky-700">
+                <i class="fa-solid fa-check text-emerald-500 mr-1"></i> Fair & Transparent (Save ~60%)
+              </td>
+              <td class="text-slate-500">Extremely Expensive</td>
+              <td class="text-slate-500">Hidden fees & cheap duplicate parts</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-800">Warranty Coverage</td>
+              <td class="compare-highlight font-extrabold text-emerald-700">
+                <i class="fa-solid fa-check text-emerald-500 mr-1"></i> Comprehensive Service Warranty
+              </td>
+              <td class="text-slate-500">Limited Warranty</td>
+              <td class="text-slate-500">No warranty or verbal only</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-800">Diagnostic Fee</td>
+              <td class="compare-highlight font-extrabold text-emerald-700">
+                <i class="fa-solid fa-check text-emerald-500 mr-1"></i> 100% Free Initial Diagnostic Check
+              </td>
+              <td class="text-slate-500">Mandatory Inspection Fee</td>
+              <td class="text-slate-500">Varies</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4-Step Repair Process (How It Works) -->
+  <section class="py-16 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+        <span class="text-xs font-black uppercase tracking-wider text-sky-600 bg-sky-100/60 px-4 py-1.5 rounded-full">
+          Simple & Hassle-Free
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-900 mt-3 sm:mt-4 tracking-tight">
+          How Your Device Gets Repaired
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-base mt-2">
+          Walk into our Borivali store or request doorstep pickup. We keep the process seamless and transparent.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
+        
+        <!-- Step 1 -->
+        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl sm:rounded-3xl p-5 sm:p-6 relative">
+          <div class="text-3xl sm:text-4xl font-black text-sky-200 absolute top-4 right-5 sm:right-6">01</div>
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-sky-600 text-white flex items-center justify-center font-black text-base sm:text-lg mb-4 sm:mb-6 shadow-md shadow-sky-600/30">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <h3 class="font-black text-base sm:text-lg text-slate-900 mb-1.5">Free Diagnosis</h3>
+          <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
+            Bring your phone or laptop. Our technicians run a multi-point hardware check and share a transparent quote.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl sm:rounded-3xl p-5 sm:p-6 relative">
+          <div class="text-3xl sm:text-4xl font-black text-sky-200 absolute top-4 right-5 sm:right-6">02</div>
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-sky-600 text-white flex items-center justify-center font-black text-base sm:text-lg mb-4 sm:mb-6 shadow-md shadow-sky-600/30">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <h3 class="font-black text-base sm:text-lg text-slate-900 mb-1.5">Precision Repair</h3>
+          <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
+            Work begins immediately using genuine OEM screens, batteries, or micro-soldered ICs. You can sit and watch live!
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl sm:rounded-3xl p-5 sm:p-6 relative">
+          <div class="text-3xl sm:text-4xl font-black text-sky-200 absolute top-4 right-5 sm:right-6">03</div>
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-sky-600 text-white flex items-center justify-center font-black text-base sm:text-lg mb-4 sm:mb-6 shadow-md shadow-sky-600/30">
+            <i class="fa-solid fa-list-check"></i>
+          </div>
+          <h3 class="font-black text-base sm:text-lg text-slate-900 mb-1.5">24-Point Quality Test</h3>
+          <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
+            We rigorously verify touch responsiveness, camera autofocus, charging thermals, speakers, and TrueTone calibration.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl sm:rounded-3xl p-5 sm:p-6 relative">
+          <div class="text-3xl sm:text-4xl font-black text-sky-200 absolute top-4 right-5 sm:right-6">04</div>
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-sky-600 text-white flex items-center justify-center font-black text-base sm:text-lg mb-4 sm:mb-6 shadow-md shadow-sky-600/30">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3 class="font-black text-base sm:text-lg text-slate-900 mb-1.5">Handover & Warranty</h3>
+          <p class="text-slate-500 text-xs sm:text-sm leading-relaxed">
+            Collect your pristine device along with an official service warranty card. Pay only after you are 100% satisfied.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Customer Testimonials & Reviews -->
+  <section class="py-16 sm:py-20 bg-slate-50" id="reviews">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-6 mb-8 sm:mb-12">
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-sky-600 bg-sky-100/60 px-4 py-1.5 rounded-full">
+            Real Customer Feedback
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-black text-slate-900 mt-3 tracking-tight">
+            Trusted by 15,000+ in Mumbai
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-base mt-1">
+            4.9 out of 5 stars based on verified Google Maps reviews.
+          </p>
+        </div>
+
+        <!-- Filter Buttons (Smooth Horizontal Scroll on Mobile) -->
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+          <button class="review-filter-btn tab-btn active" data-filter="all">All</button>
+          <button class="review-filter-btn tab-btn" data-filter="iphone">iPhone</button>
+          <button class="review-filter-btn tab-btn" data-filter="macbook">MacBook</button>
+          <button class="review-filter-btn tab-btn" data-filter="motherboard">Logic Board</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        
+        <!-- Review 1 -->
+        <div class="review-card bg-white border border-slate-200 rounded-2xl sm:rounded-3xl p-5 sm:p-6 shadow-sm flex flex-col justify-between" data-category="iphone">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-2.5 text-xs sm:text-sm">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-sm leading-relaxed mb-4">
+              "Apple Store quoted replacing the entire display on my iPhone 14 Pro Max. Aslam inspected it and showed me only the outer glass was cracked while the OLED was intact. He restored just the outer glass promptly! TrueTone is working and touch is like brand new. Genuine gem in Borivali!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-3.5 border-t border-slate-100">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-sky-100 text-sky-700 font-black flex items-center justify-center text-xs sm:text-sm shrink-0">
+              RV
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 text-xs sm:text-sm">Rahul Verma</h4>
+              <p class="text-slate-400 text-[11px]">Borivali West • iPhone 14 Pro Max</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card bg-white border border-slate-200 rounded-2xl sm:rounded-3xl p-5 sm:p-6 shadow-sm flex flex-col justify-between" data-category="macbook">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-2.5 text-xs sm:text-sm">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-sm leading-relaxed mb-4">
+              "Spilled tea over my MacBook Air M2 during an office call. It completely shut down and wouldn't power on. Official service center said the entire logic board needed replacement and data could not be recovered. Took it to Aslam Telecom. They de-oxidized the corrosion and revived the power management circuitry. Saved all my critical files!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-3.5 border-t border-slate-100">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-emerald-100 text-emerald-700 font-black flex items-center justify-center text-xs sm:text-sm shrink-0">
+              PS
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 text-xs sm:text-sm">Priya Sharma</h4>
+              <p class="text-slate-400 text-[11px]">Kandivali East • MacBook Air M2</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card bg-white border border-slate-200 rounded-2xl sm:rounded-3xl p-5 sm:p-6 shadow-sm flex flex-col justify-between" data-category="motherboard">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-2.5 text-xs sm:text-sm">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-xs sm:text-sm leading-relaxed mb-4">
+              "My Samsung Galaxy S23 Ultra suddenly died with black screen and heating near camera. Two shops in Borivali market said CPU dead, sell for scrap. Aslam bhai diagnosed short capacitor on PMIC line using thermal camera and fixed it in 3 hours. Honest technician with top-tier equipment!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-3.5 border-t border-slate-100">
+            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-indigo-100 text-indigo-700 font-black flex items-center justify-center text-xs sm:text-sm shrink-0">
+              AM
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 text-xs sm:text-sm">Aniket Mehta</h4>
+              <p class="text-slate-400 text-[11px]">Borivali East • Samsung S23 Ultra</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Store Location, Interactive Directions & Timing Card (Mobile Optimized) -->
+  <section class="py-16 sm:py-20 bg-white" id="location">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Left Location Details -->
+        <div class="lg:col-span-5 space-y-4 sm:space-y-6">
+          <span class="text-xs font-black uppercase tracking-wider text-sky-600 bg-sky-100/60 px-4 py-1.5 rounded-full">
+            Visit Our Walk-In Center
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
+            Conveniently Located in <br>
+            <span class="text-gradient">Borivali East, Mumbai</span>
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-base leading-relaxed">
+            Short walking distance from Borivali Railway Station (East Exit). Walk right into Municipal Market on Main Carter Road.
+          </p>
+
+          <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-4 sm:p-5 space-y-3.5 text-xs sm:text-sm">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-rose-500 text-base sm:text-lg mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900 block font-extrabold">Shop Address</strong>
+                <p class="text-slate-600 mt-0.5">Shop No. 15, Municipal Market, Main Carter Road, Borivali East, Mumbai, Maharashtra 400066 (Near Kasturba Police Station area)</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fa-regular fa-clock text-sky-600 text-base sm:text-lg mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900 block font-extrabold">Store Hours</strong>
+                <p class="text-slate-600 mt-0.5">Monday to Sunday: <strong>10:00 AM – 9:00 PM</strong> (Open 365 days a year)</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-phone text-emerald-600 text-base sm:text-lg mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900 block font-extrabold">Direct Line</strong>
+                <a href="tel:+919870552602" class="text-sky-600 font-bold hover:underline">+91 98705 52602</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3 pt-1">
+            <a href="https://maps.google.com/?cid=7000766540511517501" target="_blank" class="btn-primary text-xs sm:text-sm py-3 px-6 justify-center">
+              <i class="fa-solid fa-diamond-turn-right"></i>
+              <span>Google Maps Directions</span>
+            </a>
+            <a href="https://wa.me/919870552602?text=Hi%20Aslam%20Telecom,%20please%20send%20your%20exact%20shop%20location" target="_blank" class="btn-whatsapp text-xs sm:text-sm py-3 px-6 justify-center">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Send Location to WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Map Embed Frame -->
+        <div class="lg:col-span-7">
+          <div class="rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border-2 sm:border-4 border-slate-100 h-64 sm:h-[420px] bg-slate-100 relative">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.4332824961555!2d72.8615!3d19.22!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0c3f5555555%3A0x6127b813b2a11b3d!2sAslam%20Telecom!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Aslam Telecom Borivali Location Map">
+            </iframe>
+            
+            <div class="hidden sm:block absolute bottom-4 left-4 bg-white/95 backdrop-blur-md border border-slate-200/80 rounded-xl p-3 shadow-lg text-xs max-w-xs">
+              <p class="font-bold text-slate-800"><i class="fa-solid fa-train text-sky-600 mr-1"></i> Coming by Western Railway Train?</p>
+              <p class="text-slate-500 mt-0.5">Alight at Borivali Station (Platform 1 side - East), walk 200m towards Municipal Market Carter Rd.</p>
+            </div>
+          </div>
+          <!-- Mobile train instruction strip -->
+          <div class="sm:hidden mt-2 p-3 bg-sky-50 rounded-xl text-xs text-slate-600 border border-sky-100">
+            <strong class="text-slate-900 block"><i class="fa-solid fa-train text-sky-600 mr-1"></i> Walking Distance From Borivali Station (East):</strong>
+            Take Foot Over Bridge to Platform 1 exit, walk 200m into Municipal Market Carter Rd.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions (FAQ) -->
+  <section class="py-16 sm:py-20 bg-slate-50" id="faq">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10 sm:mb-16">
+        <span class="text-xs font-black uppercase tracking-wider text-sky-600 bg-sky-100/60 px-4 py-1.5 rounded-full">
+          Got Questions?
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-900 mt-3 sm:mt-4 tracking-tight">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-base mt-2">
+          Everything you need to know about our repair process, data security, and parts warranty.
+        </p>
+      </div>
+
+      <div class="space-y-3 sm:space-y-4">
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How long does a broken screen or battery replacement take?</span>
+            <i class="fa-solid fa-chevron-down faq-icon text-slate-400"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Most common screen replacements and battery swaps for iPhones, Samsung, and OnePlus are completed promptly the same day right at our Borivali East shop. You can relax in our air-conditioned waiting lounge while our technician works on your device.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Will my phone or laptop data be erased during repair?</span>
+            <i class="fa-solid fa-chevron-down faq-icon text-slate-400"></i>
+          </button>
+          <div class="faq-answer">
+            <p><strong>No, your personal data stays 100% safe.</strong> Unlike official brand service centers which mandate a complete factory wipe, we repair hardware components (screens, batteries, charging ports, audio ICs) without touching your flash storage or software partition.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What warranty do you provide on repairs?</span>
+            <i class="fa-solid fa-chevron-down faq-icon text-slate-400"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We provide a comprehensive <strong>Service Warranty</strong> on all display replacements, certified battery installations, and logic board micro-soldering repairs. An official job card and warranty slip is issued upon handover.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can you fix a water-damaged device that does not turn on?</span>
+            <i class="fa-solid fa-chevron-down faq-icon text-slate-400"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We have specialized ultrasonic cleaning tanks and micro-soldering stations. We dismantle the motherboard, strip away all chemical corrosion, reball damaged capacitors and power management ICs. We achieve an industry-leading 88%+ success rate on liquid damage revival.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you offer doorstep pickup and delivery in Mumbai?</span>
+            <i class="fa-solid fa-chevron-down faq-icon text-slate-400"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, we provide secure pickup and delivery across Borivali East/West, Kandivali, Dahisar, Malad, Goregaon, and adjoining suburbs. Contact us on WhatsApp to schedule a technician or pickup rider.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="py-14 sm:py-16 bg-gradient-to-r from-sky-600 via-sky-700 to-blue-800 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black tracking-tight">
+        Ready to Revive Your Device Today?
+      </h2>
+      <p class="text-sky-100 text-xs sm:text-lg mt-2 sm:mt-3 max-w-2xl mx-auto">
+        Walk into our Borivali store for a free diagnostic check. No appointments needed for express walk-ins!
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mt-6 sm:mt-8">
+        <button class="open-booking-modal bg-white text-slate-900 hover:bg-slate-100 font-extrabold rounded-full py-3.5 px-8 transition shadow-lg flex items-center justify-center gap-2 w-full sm:w-auto">
+          <i class="fa-solid fa-calendar-check text-sky-600"></i>
+          <span>Book Repair Online</span>
+        </button>
+        <a href="https://wa.me/919870552602?text=Hi%20Aslam%20Telecom,%20I%20want%20to%20visit%20your%20shop%20today" target="_blank" class="btn-whatsapp text-sm sm:text-base py-3.5 px-8 w-full sm:w-auto">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span>WhatsApp for Quick Slot</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 pt-12 pb-24 lg:pb-16 border-t border-slate-900 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 pb-10 border-b border-slate-900">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2 space-y-3 sm:space-y-4">
+          <img src="assets/images/logo-white.svg" alt="Aslam Telecom" class="h-9 sm:h-10">
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            Aslam Telecom is Mumbai's premier advanced logic board mobile and laptop hardware workshop. Serving Borivali East and Mumbai since 2005 with transparent evaluations, 100% data safety, and high-precision micro-soldering craftsmanship.
+          </p>
+          <div class="flex items-center gap-3 pt-1 text-white">
+            <span class="text-xs font-bold text-slate-500">Find Us Online:</span>
+            <a href="https://maps.google.com/?cid=7000766540511517501" target="_blank" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-sky-600 flex items-center justify-center transition" title="Google Maps Listing"><i class="fa-brands fa-google"></i></a>
+            <a href="https://wa.me/919870552602" target="_blank" class="w-8 h-8 rounded-full bg-slate-900 hover:bg-emerald-600 flex items-center justify-center transition" title="WhatsApp Business"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Apple Repairs -->
+        <div>
+          <h4 class="font-black text-white text-xs sm:text-sm mb-3 uppercase tracking-wider">Apple Care</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="services.html" class="hover:text-sky-400 transition">iPhone Screen Replacement</a></li>
+            <li><a href="services.html" class="hover:text-sky-400 transition">iPhone Battery (100% Health)</a></li>
+            <li><a href="services.html" class="hover:text-sky-400 transition">MacBook Logic Board Fix</a></li>
+            <li><a href="services.html" class="hover:text-sky-400 transition">iPad Glass & OLED Touch</a></li>
+            <li><a href="services.html" class="hover:text-sky-400 transition">Apple Watch Glass Repair</a></li>
+            <li><a href="services.html" class="hover:text-sky-400 transition">Laser Back Glass Removal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Android & Multi-Brand -->
+        <div>
+          <h4 class="font-black text-white text-xs sm:text-sm mb-3 uppercase tracking-wider">Android & Laptop</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="services.html" class="hover:text-sky-400 transition">Samsung S24 & Z Fold/Flip</a></li>
+            <li><a href="services.html" class="hover:text-sky-400 transition">OnePlus Display & Green Line</a></li>
+            <li><a href="services.html" class="hover:text-sky-400 transition">Google Pixel Motherboard</a></li>
+            <li><a href="services.html" class="hover:text-sky-400 transition">Liquid Damage Ultrasonic Bath</a></li>
+            <li><a href="services.html" class="hover:text-sky-400 transition">Charging Port & Audio Fix</a></li>
+            <li><a href="services.html" class="hover:text-sky-400 transition">Data Recovery from Dead Phone</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Store Contact -->
+        <div>
+          <h4 class="font-black text-white text-xs sm:text-sm mb-3 uppercase tracking-wider">Borivali Store</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Shop No. 15, Municipal Market, Main Carter Road, Borivali East, Mumbai 400066.
+          </p>
+          <div class="mt-2.5 space-y-1 text-xs">
+            <p><strong class="text-white">Call:</strong> +91 98705 52602</p>
+            <p><strong class="text-white">Hours:</strong> 10:00 AM - 9:00 PM</p>
+            <p class="text-emerald-400 font-bold">Open Monday to Sunday</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits -->
+      <div class="pt-6 flex flex-wrap items-center justify-between text-xs text-slate-500 gap-3">
+        <p>&copy; 2026 Aslam Telecom. All rights reserved. Repair • Reuse • Revive.</p>
+        <div class="flex items-center gap-4">
+          <a href="about.html" class="hover:text-slate-300">About Us</a>
+          <a href="services.html" class="hover:text-slate-300">Services</a>
+          <a href="index.html#before-after" class="hover:text-slate-300">Before & After</a>
+          <a href="contact.html" class="hover:text-slate-300">Store Directions</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button (Positioned comfortably above mobile bottom bar) -->
+  <a href="https://wa.me/919870552602?text=Hello%20Aslam%20Telecom,%20I%20need%20device%20repair%20assistance" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+  </a>
+
+  <!-- Mobile Sticky Bottom Bar (Thumb-Optimized Conversion Toolbar) -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:+919870552602" class="btn-outline flex-1 text-center justify-center py-2.5 text-xs font-bold">
+      <i class="fa-solid fa-phone text-sky-600"></i> Call
+    </a>
+    <a href="https://wa.me/919870552602?text=Hi%20Aslam%20Telecom,%20I%20need%20repair%20details" target="_blank" class="btn-whatsapp flex-1 text-center justify-center py-2.5 text-xs font-bold">
+      <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+    </a>
+    <button class="open-booking-modal btn-primary flex-1 text-center justify-center py-2.5 text-xs font-bold">
+      <i class="fa-solid fa-calendar-check"></i> Book
+    </button>
+  </div>
+
+  <!-- Booking & Callback Modal (Bottom Sheet on Phones) -->
+  <div id="bookingModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
+        <div>
+          <h3 class="font-black text-lg sm:text-xl text-slate-900">Book A Priority Repair</h3>
+          <p class="text-slate-500 text-xs">Zero waiting queue at our Borivali East workshop</p>
+        </div>
+        <button id="closeBookingModal" class="w-9 h-9 flex items-center justify-center text-slate-400 hover:text-slate-700 text-xl rounded-full bg-slate-100">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form id="bookingModalForm" class="space-y-3 sm:space-y-4">
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Your Full Name</label>
+          <input type="text" name="name" required placeholder="e.g. Sameer Kulkarni" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
+        </div>
+        <div>
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Mobile / WhatsApp Number</label>
+          <input type="tel" name="phone" required placeholder="e.g. 98705 12345" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
+        </div>
+        <div class="grid grid-cols-2 gap-2.5">
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Device Model</label>
+            <input type="text" name="device" required placeholder="e.g. iPhone 15" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Problem</label>
+            <input type="text" name="issue" required placeholder="e.g. Broken Screen" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500">
+          </div>
+        </div>
+
+        <div class="bg-sky-50 p-3 rounded-xl text-xs text-sky-800 flex items-center gap-2">
+          <i class="fa-solid fa-circle-check text-sky-600 text-sm shrink-0"></i>
+          <span>Connects directly with Master Technician Aslam on WhatsApp.</span>
+        </div>
+
+        <button type="submit" class="btn-primary w-full py-3.5 text-sm font-bold justify-center mt-1">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Confirm Booking On WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
